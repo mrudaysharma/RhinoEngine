@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+ <head>
+  <script type="server/javascript">
+        importClass(Packages.org.orgacard.Person)
+        var id=request.getParameter("id");
+        var person=Person.lookup(id)
+    </script>  
+  <title>Name 1</title> 
+ </head> 
+ <body> 
+  <h1 title="Name 1">Name 1</h1> 
+   
+  <div data-for-child="person.children">
+   <div>Child: Children 0</div>
+  </div>  
+ </body>
+</html>

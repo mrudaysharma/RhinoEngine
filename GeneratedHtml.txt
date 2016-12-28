@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+ <head>
+  <script type="server/javascript">
+        importClass(Packages.biz.netcentric.Person)
+        var id=request.getParameter("id")
+        var person=Person.lookup(id)
+    </script>  
+  <title>Maria</title> 
+ </head> 
+ <body> 
+  <h1 title="Maria">Maria</h1> 
+  <h2 data-if="person.married" title="Pere">Spouse: Pere</h2> 
+  <div data-for-child="person.children">
+   <div>Child: Anna</div><div>Child: Berta</div><div>Child: Clara</div>
+  </div>  
+ </body>
+</html>
